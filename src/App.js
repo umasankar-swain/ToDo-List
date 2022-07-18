@@ -38,7 +38,7 @@ const App = () => {
       <div className="container">
         <h2>To Do List App</h2>
         <form action="" onSubmit={handleSubmit} className='todoForm'>
-          <input value={todo} type="text" onChange={(e) => setTodo(e.target.value)} />
+          <input value={todo} placeholder="Enter an Item" type="text" onChange={(e) => setTodo(e.target.value)} />
           <button type='submit'>{editId ?"Edit":"Go"}</button>
         </form>
         <ul className='allTodos'>
